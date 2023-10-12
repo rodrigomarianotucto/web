@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    background-image: url(../img/fondito.png);
+    background-repeat: no-repeat;
+    background-size: 2500px ;
+}
+
+.form{
+    background-color:#0157959a;
+    margin: auto;
+    margin-top: 5em;
+    width: 90%;
+    max-width: 400px;
+    padding: 4.5em 3em;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px -5px rgb(0 0 0 / 30%);
+    text-align: center;
+    position: relative;
+    z-index: 2;
+
+}
+.form_titulo{
+    font-size: 2rem;
+    font-weight: 500;
+    position: relative;
+    margin-bottom: .5em;
+    color: #ffffff;
+}
+.form_titulo:after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(135deg, #ffffff, #2118cd);    
+    border-radius: 5px;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .5s;
+}
+.form_titulo:hover:after{
+    transform-origin: left;
+    transform: scaleX(1);
+}
+.form_parrafo{
+    font-weight: 300;
+    color: #ffffff;
+
+}
+.form_link{
+    font-weight: 400;
+    color: rgb(255, 255, 255);
+}
+.form_container{
+    margin-top: 3em;
+    display: grid;
+    gap: 2.5em;
+}
+.form_group{
+    position: relative;
+    --color: #ffffff;
+
+}
+.form_input{
+    width: 100%;
+    background: none;
+    color: #ffffff;
+    font-size: 1rem;
+    padding: .6em .3em;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid var(--color);
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.form_input:not(:placeholder-shown){
+    color: #ffffff;
+}
+
+
+.form_input:focus + .form_label, 
+.form_input:not(:placeholder-shown) + .form_label{
+    transform: translateY(-12px) scale(.7);
+    transform-origin: left top;
+    color: #ffffff;
+}
+
+.form_label{
+    color: var(--color);
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 5px;
+    transform: translateY(10px);
+    transition: transform .5s, color .3s;
+}
+.form_submit{
+    background: #ffffff;
+    color: #015795;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-weight: bold;
+    font-size: 1rem;
+    padding: .8em 0;
+    border: none;
+    border-radius: .5em;
+    cursor: pointer;
+}
+.form_submit:hover{
+    background: #030051;
+    color: #ffffff;
+    transition: 0.5s;
+}
+.form_line{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #ffffff;
+    transform: scale(0);
+    transform: left bottom;
+    transition: transform .4s;
+}
+
+.form_input:focus ~ .form_line, 
+.form_input:not(:placeholder-shown) ~ .form_line{
+    transform: scale(1);
+}
+
+footer{
+    background-color: black;
+    padding-bottom: 0.5em;
+    margin-top: 1em;
+    padding-top: 0.5em;
+}
+.h3_titulo
+{
+    color: white;
+    font-size: 1.2em;
+    margin-top: 1em;
+}
+h4{
+    color: white;
+    font-size: 0.9em;
+}
+.librito{
+    padding-right: 5em;
+    padding-top: 1em;
+    margin-left: 3em;
+}
+
+@media (max-width:425px){
+    .form_titulo{
+        font-size: 1.8rem;
+    }
+}

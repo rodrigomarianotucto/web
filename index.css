@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;700&family=Merriweather:wght@300;400;700&family=Poppins:wght@300;400;700&family=Roboto:wght@300;400;700&family=Spline+Sans:wght@300;400;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+div.container {
+    width: 96%;
+    max-width: 960px;
+    margin: 0 auto;
+    }
+.imagen {
+    width: 100%;
+    height: auto;
+    }
+
+    footer{
+        background-color: black;
+        padding-bottom: 2em;
+        margin-top: 1em;
+        padding-top: 0.5em;
+    }
+    .h3_titulo
+    {
+        color: white;
+        font-size: 1.2em;
+        margin-top: 1em;
+    }
+    h4{
+        color: white;
+        font-size: 0.9em;
+    }
+    .fa-facebook{
+        color: white;
+        margin-top: 1em;
+        margin-right: 1em;
+        font-size: 3em;
+    }
+    
+    .fa-instagram{
+        color: white;
+        margin-top: 1em;
+        margin-right: 1em;
+        font-size: 3em;
+    }
+    .fa-twitter{
+        color: white;
+        margin-top: 1em;
+        margin-right: 1em;
+        font-size: 3em;
+    }
+    .librito{
+        padding-right: 6em;
+        padding-top: 1em;
+        margin-left: 3em;
+    }
+
+
+    h5{color: black;}
+    p{color:black}
+
+
+
+
+    .carousel img {
+        max-width: 100%; /* La imagen no superará el ancho del contenedor */
+        height: 500px; 
+
+    }   
+
+    /*indicadores*/
+    .carousel-indicators button.active {
+        background-color: black; /* Cambia el color de fondo para el botón activo */
+    
+    }
+
+    /*botones de navegación carrusel*/
+        .carousel-control-prev,
+        .carousel-control-next {
+            background-color: black;
+            border: none; /* Elimina el borde */
+            width: 50px; /* Ajusta el ancho según sea necesario */
+            height: 50px; /* Ajusta la altura según sea necesario */
+            top: 50%; /* Centra verticalmente */
+            transform: translateY(-50%);
+        }
+        
+        
